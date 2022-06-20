@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Single Page</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'singlepage/styles.css' %}">
+        <script src="{% static 'singlepage/js/singlepage.js' %}" type="text/javascript"></script>
+    </head>
+    <body>
+        <h1>نرحب بكم - Hello!</h1>
+        <button data-section="1">Section 1</button>
+        <button data-section="2">Section 2</button>
+        <button data-section="3">Section 3</button>
+        <div id="content"></div>
+    </body>
+</html>
