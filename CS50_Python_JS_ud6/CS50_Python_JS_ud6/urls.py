@@ -19,5 +19,7 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('singlepage/', include("singlepage.urls")),
-    path('posts/', include("posts.urls"))
+    path('posts/', include("posts.urls")),
+    path('react/', include("react.urls")),
+    path('addition/', include("addition.urls"))
 ]

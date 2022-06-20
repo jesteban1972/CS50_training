@@ -33,6 +33,8 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'singlepage',
     'posts',
+    'react',
+    'addition',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
