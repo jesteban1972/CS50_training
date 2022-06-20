@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Webpage</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'posts/styles.css' %}">
+    <script src="{% static 'posts/js/posts.js' %}" type="text/javascript"></script>
+  </head>
+  <body>
+    <button>Start/stop animation</button>
+    <h1>Posts</h1>
+    <div id="posts"></div>
+  </body>
+</html>

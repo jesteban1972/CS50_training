@@ -1,0 +1,78 @@
+body {
+    background: rgb(2, 0, 36);
+    background-image: linear-gradient(135deg, rgba(2, 0,36, 1) 0%, rgba(9, 9, 121, 1) 64%, rgba(0, 212, 255, 1) 100%);
+    background-attachment: fixed;
+    font-family: Arial, serif;
+    color: white;
+    font-size: large;
+    padding-bottom: 50px;
+}
+
+.post {
+    background-color: #11c2dd;
+    padding: 20px;
+    margin: 10px;
+}
+
+@keyframes grow {
+    from {
+        font-size: 20px;
+    }
+    to {
+        font-size: 50px;
+    }
+}
+
+@keyframes move {
+    0% {
+        left: 0%;
+    }
+    50% {
+        left: 50%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+        height: 100%;
+        line-height: 100%;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    75% {
+        opacity: 0;
+        height: 100%;
+        line-height: 100%;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    100% {
+        opacity: 0;
+        height: 0px;
+        line-height: 0px;
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+h1 {
+    position: relative;
+    animation-name: grow, move;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.post {
+    background-color: #115fdd;
+    padding: 20px;
+    margin-bottom: 10px;
+    animation-name: hide;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
