@@ -1,0 +1,11 @@
+{% extends "forms/layout.html" %}
+
+{% block body %}
+    <h1>Task Manager</h1>
+    <ul>
+        {% for task in tasks %}
+            <li>{{ task }}</li>
+        {% endfor %}
+    </ul>
+	<a href="{% url 'forms:add' %}">Add a New Task</a>
+{% endblock %}

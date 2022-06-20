@@ -1,0 +1,11 @@
+{% extends "django_forms/layout.html" %}
+
+{% block body %}
+    <h1>Add Task:</h1>
+    <form action="{% url 'django_forms:add' %}" method="post">
+		{% csrf_token %}
+        {{ django_form }}
+        <input type="submit">
+    </form>
+	<a href="{% url 'django_forms:index' %}">View Tasks</a>
+{% endblock %}

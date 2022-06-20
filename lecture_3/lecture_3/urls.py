@@ -21,4 +21,7 @@ urlpatterns = [
     path('first_app/', include("first_app.urls")),
     path('styles/', include("styles.urls")),
     path('newyear/', include("newyear.urls")),
+    path('tasks/', include("tasks.urls")),
+    path('forms/', include("forms.urls")),
+    path('django_forms/', include("django_forms.urls")),
 ]

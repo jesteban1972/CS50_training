@@ -1,0 +1,12 @@
+{% extends "django_forms/layout.html" %}
+
+{% block body %}
+    <h1>Task Manager</h1>
+	<p>Tasks: {{ Tasks }}</p>
+    <ul>
+        {% for task in tasks %}
+            <li>{{ task }}</li>
+        {% endfor %}
+    </ul>
+	<a href="{% url 'django_forms:add' %}">Add a New Task</a>
+{% endblock %}
